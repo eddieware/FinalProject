@@ -1,12 +1,12 @@
-package com.example.finalproject
+package com.example.finalproject.API
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
-import com.example.apiadapter.BeerActivity
 import com.example.apiadapter.Network
+import com.example.finalproject.BeerActivity
+import com.example.finalproject.R
 import kotlinx.android.synthetic.main.beer_activity_main.*
 
 class BeerMainActivity : AppCompatActivity() {

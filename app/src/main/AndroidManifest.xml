@@ -19,8 +19,9 @@
             android:name=".SignUp"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".BeerMainActivity"
+            android:name=".API.BeerMainActivity"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".BeerActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

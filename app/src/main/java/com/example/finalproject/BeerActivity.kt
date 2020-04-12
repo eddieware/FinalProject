@@ -1,4 +1,4 @@
-package com.example.apiadapter
+package com.example.finalproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,8 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.finalproject.R
+import com.example.apiadapter.BeerAdapter
+import com.example.apiadapter.Results
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.beer_activity_list.*
