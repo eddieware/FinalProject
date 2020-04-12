@@ -18,12 +18,13 @@ class Login : AppCompatActivity() {
         //contexto es la actividad en la que estas trabajando
 
         btnIniciarSesion.setOnClickListener {
-            var username1 = edtCorreo.text.toString()
-            var userpass= password.text.toString()
+
+            /*
+            *
 
             //comparo contral la tabla user de la bd
             doAsync{
-               var user=  UserDatabase.getInstance(this)!!.userDao().validateuser(username1,userpass)
+                var user=  UserDatabase.getInstance(this)!!.userDao().validateuser(username1,userpass)
             }.execute()
 
             if (user != null){
@@ -31,10 +32,12 @@ class Login : AppCompatActivity() {
 
             }else{
                 password.setText("")
-                edtCorreo.setText("")
+                edtCorreo1.setText("")
                 Toast.makeText(this, "Usuario NO valido", Toast.LENGTH_LONG).show()
 
-            }
+            }*/
+
+
         }
     }
 

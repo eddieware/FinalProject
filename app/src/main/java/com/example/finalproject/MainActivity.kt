@@ -5,11 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.finalproject.Helper.doAsync
-import com.example.finalproject.database.User
 import com.example.finalproject.database.UserDatabase
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_sign_up.*
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         btnCrearCuenta.setOnClickListener {
             //Insert
 
-            val objUser = User(userName = "Eddieware",phoneUser = "4622494244", userEmail = "eddieware@gmail",userPass = "1234",userUpdateAt = Date())
+
 
             doAsync{
                UserDatabase.getInstance(this)!!.userDao().insertUser(objUser)// contexto se refiere a actividad o clase local
@@ -42,6 +39,30 @@ class MainActivity : AppCompatActivity() {
         } */
         btnIniciarSesion.setOnClickListener {
             Toast.makeText(this,"Se intento iniciar sesion", Toast.LENGTH_LONG).show()
+
+            var username1 = edtCorreo.text.toString()
+            var userpass= password.text.toString()
+
+
+            //comparo contral la tabla user de la bd
+            doAsync{
+                var user=  UserDatabase.getInstance(this)!!.userDao().validateuser(username1,userpass)
+            }.execute()
+
+            if (username1 != null){
+                Toast.makeText(this, "Usuario valido", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, BeerMainActivity::class.java)
+                startActivity(intent)
+
+
+            }else{
+                password.setText("")
+                edtCorreo.setText("")
+                Toast.makeText(this, "Usuario NO valido", Toast.LENGTH_LONG).show()
+
+            }
+            //val objUser = User(userName = "Eddieware",phoneUser = "4622494244", userEmail = "eddieware@gmail",userPass = "1234",userUpdateAt = Date())
+
         }
 
 
