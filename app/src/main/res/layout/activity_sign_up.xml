@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:background="@drawable/et_bg"
-        android:hint="@string/email_address"
+        android:hint="Nombre"
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:textColorHint="@color/login_form_details"
@@ -125,7 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtContrasena" />
 
     <Button
-        android:id="@+id/btnIniciarSesion2"
+        android:id="@+id/btnIniciarSesion_sup"
         android:layout_width="99dp"
         android:layout_height="38dp"
         android:layout_marginBottom="16dp"

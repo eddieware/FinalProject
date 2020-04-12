@@ -1,5 +1,6 @@
 package com.example.finalproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -45,15 +46,13 @@ class MainActivity : AppCompatActivity() {
 
 
         btnCreatecount_log.setOnClickListener {
-            Toast.makeText(this,"Crear Cuenta", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this,"Crear Cuenta", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
 
         }
 
-
-
     }
-
-
 }
 
 

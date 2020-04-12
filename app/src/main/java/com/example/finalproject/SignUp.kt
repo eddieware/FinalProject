@@ -50,14 +50,17 @@ class SignUp : AppCompatActivity() {
             Toast.makeText(this,"Se registró el usuario", Toast.LENGTH_LONG).show()
         }
 
-        btnCrearcuenta_m.setOnClickListener{
-            val intent = Intent(this@SignUp, Login::class.java)
+
+
+        btnIniciarSesion_sup.setOnClickListener {
+
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-    }
 
 
 
 
     }
+}
 
