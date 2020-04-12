@@ -2,8 +2,6 @@ package com.example.finalproject
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalproject.Helper.doAsync
@@ -39,7 +37,7 @@ class SignUp : AppCompatActivity() {
         }*/
 
         // Insertamos el usuario a la base de datos
-        btnCrearCuenta.setOnClickListener{
+        btnCrearcuenta_m.setOnClickListener{
             val userName = edtNombre.text.toString()
             val phoneUser = edtTelefono.text.toString()
             val emailUser = edtCorreo.text.toString()
@@ -52,7 +50,7 @@ class SignUp : AppCompatActivity() {
             Toast.makeText(this,"Se registró el usuario", Toast.LENGTH_LONG).show()
         }
 
-        btnCrearCuenta.setOnClickListener{
+        btnCrearcuenta_m.setOnClickListener{
             val intent = Intent(this@SignUp, Login::class.java)
             startActivity(intent)
         }

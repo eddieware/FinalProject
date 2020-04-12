@@ -6,6 +6,7 @@ import android.widget.Toast
 import com.example.finalproject.Helper.doAsync
 import com.example.finalproject.database.User
 import com.example.finalproject.database.UserDatabase
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import java.util.*
 
@@ -38,6 +39,17 @@ class MainActivity : AppCompatActivity() {
             }.execute()
 
         } */
+        btnIniciarSesion.setOnClickListener {
+            Toast.makeText(this,"Se intento iniciar sesion", Toast.LENGTH_LONG).show()
+        }
+
+
+        btnCreatecount_log.setOnClickListener {
+            Toast.makeText(this,"Crear Cuenta", Toast.LENGTH_LONG).show()
+
+        }
+
+
 
     }
 

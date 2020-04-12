@@ -57,14 +57,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/et_bg"
-        android:hint="@string/email_address"
+        android:hint="Correo Electrónico"
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:textColorHint="@color/login_form_details"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/icon" />
-
 
 
     <EditText
@@ -74,7 +73,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/et_bg"
         android:drawableEnd="@drawable/ic_eye"
-        android:hint="@string/password"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         android:padding="16dp"
         android:textColorHint="@color/login_form_details"
@@ -83,15 +82,29 @@
         app:layout_constraintTop_toBottomOf="@+id/edtCorreo" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btnIniciarSesion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_bg"
-        android:text="@string/login_now"
+        android:text="Iniciar Sesión"
         android:textAllCaps="false"
         android:textColor="@color/login_form_details_medium"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <Button
+        android:id="@+id/btnCreatecount_log"
+        android:layout_width="232dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/btn_bg"
+        android:text="Crear Cuenta"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@id/password" />
 
@@ -105,44 +118,22 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/btn_login" />
-
-    <View
-        android:id="@+id/footer_line"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="50dp"
-        android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-
-        />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dont_have_an_account"
-        android:textColor="@color/login_form_details"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/footer_line" />
+        app:layout_constraintTop_toBottomOf="@id/btnIniciarSesion" />
 
     <TextView
         android:id="@+id/facebook_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="68dp"
         android:drawableStart="@drawable/ic_if_square_facebook"
         android:drawablePadding="8dp"
         android:text="@string/sign_in_with_facebook"
         android:textColor="@color/login_form_details"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/footer_line"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
 
     <View
         android:id="@+id/line1"
