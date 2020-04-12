@@ -22,4 +22,10 @@ interface UserDAO {
     @Query("SELECT * FROM tblUser WHERE user_name = :user AND pass_user=:pwd")
     fun validateuser(user:String, pwd:String): User?
 
+
+    @Query("select * from tblUser order by user_name")
+    fun loadAllUser() : List<User>
+
+    
+
 }

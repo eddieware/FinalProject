@@ -37,7 +37,7 @@
 
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/edtCorreo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -78,7 +78,7 @@
         android:textColorHint="@color/login_form_details"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCorreo" />
 
     <Button
         android:id="@+id/btn_login"

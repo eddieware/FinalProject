@@ -6,13 +6,11 @@ import java.sql.Timestamp
 import java.util.logging.LogManager
 
 class DataConverter {
-
     @TypeConverter
-    fun toDate(timestamp: Long) : Date? {
-
-        return if(timestamp != null) Date(timestamp) else null
-
+    fun toDate(timestamp: Long?) : java.util.Date?{
+        return if(timestamp != null ) java.util.Date(timestamp) else null
     }
+
     @TypeConverter
-    fun timeStamp(date: Date): Long? = date?.time
+    fun toTimeStamp(date: java.util.Date):Long? = date?.time
 }
