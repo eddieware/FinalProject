@@ -17,7 +17,7 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //contexto es la actividad en la que estas trabajando
 
-        btn_login.setOnClickListener {
+        /*btn_login.setOnClickListener {
             var username1 = edtCorreo.text.toString()
             var userpass= password.text.toString()
 
@@ -35,7 +35,7 @@ class Login : AppCompatActivity() {
                 Toast.makeText(this, "Usuario NO valido", Toast.LENGTH_LONG).show()
 
             }
-        }
+        }*/
     }
 
 }
